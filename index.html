@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Por nuestro primer mes🥺</title>
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Fuente -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #9AD0FF, #A88CFF);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    padding: 60px 20px;
+    animation: fadeIn 2s ease;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* SECCIONES */
+.section {
+    padding: 50px 20px;
+    animation: fadeUp 1.5s ease;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 5px #553C9E;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/* BOTÓN */
+button {
+    background: #fff;
+    color: #183FA3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #73B4FF;
+    color: white;
+}
+
+/* CORAZONES */
+.heart {
+    position: fixed;
+    bottom: -10px;
+    font-size: 20px;
+    animation: floatUp 5s linear infinite;
+    color: #fff;
+}
+.first-msg {
+    box-shadow: 5px 5px 5px #553C9E;
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+.recuerdos {
+    cursor: pointer;
+}
+
+/* ANIMACIONES */
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    padding: 20px;
+    font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FELIZ PRIMER MES MI AMOR 💙</h1>
+    <p>Gracias por estar conmigo, por mejorar mi vida y por todo <333</p>
+</header>
+
+<section class="section">
+    <div class="first-msg">
+        <i class="fa-solid fa-heart"></i>
+        <h2>Para mi Retsita</h2>
+        <p>
+            "Ola mi amor, como ya sabes, hoy cumplimos nuestro primer mes como pareja, 
+            quiero que sepas que durante este primer mes y desde antes, por el hecho
+            de haber estado contigo me he sentido muy feliz, contento, 
+            afortunado de tener la oportunidad de estar a tu lado de esta manera,
+             he tenido dias y momentos hermosos gracias a ti, siempre estas para 
+             hacerlo todo mejor, sea un mal o buen dia, tu siempre me haces sentir 
+             mucho mejor, con el solo hecho de poder pasar tiempo contigo, hablando, 
+             jugando, viendo algo, o cualquier cosa que compartamos, siempre que estas, 
+             para mi el momento es maravilloso.
+        </p>
+    </div>
+
+    <div class="card recuerdos" onclick="window.location.href='recuerdos.html'">
+        <i class="fa-solid fa-image"></i>
+        <h2>Recuerdos (Son desde antes pero shhhh)</h2>
+        <img src="ret_y_yo/pqmepegas.png" alt="imagen">
+        <p></p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-envelope"></i>
+        <h2>Mas pensamientos sobre ti</h2>
+        <p id="mensaje">💙</p>
+        <button onclick="mostrarMensaje()">Mostrar</button>
+    </div>
+</section>
+
+<footer>
+    Hecho con todo mi amor y cariño para ti mi niña <3
+</footer>
+
+<script>
+function mostrarMensaje() {
+    msg = "De vdd me he has hecho sentir completamente amado y aceptado, tienes toda mi confianza, en todos los sentidos, y quiero que sepas que yo tambien busco que te sientas asi, quiero que sepas que te amo, me encanta tu manera de ser tan divertida, interesante, linda (soloconmigookei), siempre dispuesta a escuchar y entenderme, asi como las cosas a las que llamamos “cuestionables” que por supuesto, para mi significa mas razones para verte unica, especial, interesante y sobretodo, son cosas que siempre me llamaron la atencion sobre ti, me gusta que seas asi y sinceramente ayudo mucho a que me fijara en ti, tambien, en general, por tu manera de ver las cosas. Por ejemplo, tu idea de que al estar en pareja no debes fijarte en nadie ni nada mas que no sea tu pareja para ninguna circunstancia, lo de no hablar seguido con nadie mas, pasar nuestras cuentas y ese tipo de cosas, algunas pueden parecer algo logico, otras muchos las verian mal, el punto es que me gusta mucho que seas asi, que lo veas de una manera tan importante e “intensa” me encanta."
+    document.getElementById("mensaje").innerText = msg;
+}
+
+/* CORAZONES AUTOMÁTICOS */
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💜";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 10 + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}, 300);
+</script>
+
+</body>
+</html>
